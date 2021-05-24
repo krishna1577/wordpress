@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wordpress</title>
+        <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <style>
+        @media(max-width: 1000px){
+            #box1{
+                flex-direction: column;
+                padding: 0px;
+                text-align: center;
+            }
+            #box2{
+                flex-direction: column;
+            }
+        }
+        @media(max-width: 1100px){
+            #box3{
+                flex-direction: column;
+            }
+        }
+        @media(max-width: 700px){
+            #box31{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary text-white">
+        <a class="navbar-brand text-white" href="#"><i class="fab fa-wordpress"></i> Wordpress</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Blogs</a>
+                  <a class="dropdown-item" href="#">Domains</a>
+                  <a class="dropdown-item" href="#">Websites</a>
+                  <a class="dropdown-item" href="#">eCommerce</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Overview</a>
+                  <a class="dropdown-item" href="#">Plugins</a>
+                  <a class="dropdown-item" href="#">Themes</a>
+                  <a class="dropdown-item" href="#">Google apps</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">News</a>
+                <a class="dropdown-item" href="#">Expert Tips</a>
+                <a class="dropdown-item" href="#">logo maker</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Plans & Pricing</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-white my-2 my-sm-0"  data-toggle="modal" data-target="#login">login</button>
+            <button class="btn btn-outline-white my-2 my-sm-0" data-toggle="modal" data-target="#signin">Signin</button>
+          </div>
+        </div>
+    </nav>
+    <div id="login" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-white bg-dark">
+                <div class="modal-header">
+                    <h2>Sign In</h2>
+                    <button class="btn btn-outline-white" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <button class="btn btn-outline-white">Submit</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signin" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-white bg-dark">
+                <div class="modal-header">
+                    <h2>Sign In</h2>
+                    <button class="btn btn-outline-white" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <button class="btn btn-outline-white">Submit</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center text-white bg-primary mb-0">
+        <h1 class="display-4">Create a website in minutes</h1>
+        <p class="lead">WordPress.com gives you everything you need to start your website today.</p>
+        <hr class="my-4">
+        <p>Free hosting, your own domain, a world-class support team, and so much more.</p>
+        <p class="lead">
+          <a class="btn btn-outline-white btn-lg" href="#" role="button">Start Your Site</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-between p-5 bg-warning justify-content-center" id="box1">
+          <div class="p-3">
+              <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create/index/media/v1-pitch1-icons.png" width="200px" alt="">
+              <h2 class="mt-0">Create anything, for anyone.</h2>
+              <p>WordPress.com allows you to build a website that meets your unique needs. Start a blog, business site, portfolio, online store, or anything else you can imagine.</p>
+              <p>With built-in optimization and responsive, mobile-ready themes, there’s no limit to who you can reach with your new website. Create a simple website for your family or sell products around the world—it’s up to you.</p>
+          </div>
+            <img src="https://thumbs.dreamstime.com/b/teamwork-group-friends-logo-image-holding-each-other-39918563.jpg" width="400px" style="margin: 0px auto;">
+      </div>
+      <div class="d-flex justify-content-between p-5 bg-light justify-content-center" id="box1">
+        <img src="https://www.verywellmind.com/thmb/f3wIuvLuXsX8PrzYe6IHfh1sja8=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/200391849-001-56a792533df78cf772973e6c.jpg" width="400px" style="margin: 0px auto;">
+        <div class="p-5">
+            <h2 class="mt-0">Plans that fit your needs.</h2>
+            <p>No matter the size of your budget, WordPress.com has a plan that’s right for you. Create a free website and get access to professional themes, 3 GB of storage space, community support, and more.</p>
+            <p>If you need more features, you can choose from one of three affordable plans. With each plan you’ll get a custom domain name, more space for your files, and priority support. Some plans also include advanced design customization, monetization tools, and the ability to upload custom WordPress plugins or themes.</p>
+        </div>
+    </div>
+    <div>
+        <div class="bg-dark text-white">
+            <div class="d-flex" id="box2">
+                <div class="p-5">
+                 <div>
+                     <h3 class="fas fa-home"></h3>
+                     <h3>Plans for any budget</h3>
+                     <p>Start for free and get your website running quickly. Upgrade for advanced customization and themes, additional storage space, and business tools.</p>
+                </div>
+                <div>
+                     <h3 class="far fa-edit"></h3>
+                     <h3>Intuitive editor</h3>
+                     <p>Start for free and get your website running quickly. Upgrade for advanced customization and themes, additional storage space, and business tools.</p>
+                 </div>
+                 <div>
+                     <h3 class="fas fa-cloud"></h3>
+                     <h3>Upload or embed media</h3>
+                     <p>Our editor is fast, intuitive, and includes HTML and Markdown support. We save your work every few seconds, so you’ll never miss a word.</p>
+                 </div>
+                </div>
+             <div class="p-5">
+                 <div>
+                      <h3><i class="fas fa-signal"></i></h3>
+                      <h3>Optimized for growth</h3>
+                      <p>WordPress.com has Jetpack essential features built in, including site statistics, basic SEO, and social media sharing.</p>
+                 </div>
+                 <div>
+                      <h3><i class="fas fa-mobile"></i></h3>
+                      <h3>Mobile and desktop apps</h3>
+                      <p>Update your site from anywhere with mobile and desktop apps for iOS, Android, Mac, Windows, and Linux systems.</p>
+                  </div>
+                  <div>
+                      <h3><i class="fas fa-rss-square"></i></h3>
+                      <h3>Blog, website, or both</h3>
+                      <p>Build a blog, a full website, or a combination of both. Write about your life, build a beautiful portfolio of your work, or build a robust business site — it’s up to you.</p>
+                  </div>
+              </div>
+         </div>
+         <div class="d-flex justify-content-center">
+            <button class="btn btn-outline-white">Start Your Website</button>
+         </div>
+        </div>
+        <div class="py-5">
+            <h2 class="text-center">People Love WordPress.com</h2>
+            <div class="d-flex p-5" id="box3">
+                <div class="d-flex p-5 align-items-center" id="box31">
+                    <p>WordPress.com works really well with Google for a great SEO ranking. I can also embed YouTube videos, Google Maps, and other content easily and without any coding ability.</p>
+                    <div>
+                        <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/quintin-lake.png" width="250px">
+                    </div>
+                </div>
+                <div class="d-flex p-5 align-items-center"  id="box31">
+                    <p>It’s been a great privilege and a life-changing experience. I’m grateful to WordPress.com for providing an affordable and user-friendly platform for individuals to launch projects and be heard in this way.</p>
+                    <div>
+                        <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/ann-morgan.png" width="250px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid m-0">
+            <div class="bg-dark">
+                <div class="row">
+                    <div class="col-md-6 p-5 text-white">
+                        <h1>Free to start,with 4 ways to grow.</h1>
+                        <p>We do site-building differently, with plans designed to fit your business and your budget today while giving it room to grow tomorrow. Blog, store, multinational corporation—there’s a plan for you.</p>
+                    </div>
+                    <div class="col-md-6 p-5">
+                        <div class="card">
+                            <div class="card-body bg-dark text-white">
+                                <h3 class="card-title">Free</h3>
+                                <h5 class="card-sub-title">Best for Getting Started</h5>
+                                <button class="btn btn-secondary">Start with free</button>
+                                <p class="card-text">Create a beautiful, simple website in minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 p-5">
+                        <div class="card">
+                            <div class="card-body bg-warning text-dark">
+                                <h3 class="card-title">Personal</h3>
+                                <h6 class="card-sub-title">Best for Personal Use</h6>
+                                <h3><del>$200</del> $160</h3>
+                                <h6 class="card-sub-title">Save 20% per month! Billed yearly</h6>
+                                <button class="btn btn-outline-dark">Start with Personal</button>
+                                <p class="card-text">Create a beautiful, simple website in minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 p-5">
+                        <div class="card">
+                            <div class="card-body bg-danger text-dark">
+                                <h3 class="card-title">Premim</h3>
+                                <h6 class="card-sub-title">Best for FreeLancers</h6>
+                                <h3><del>$350</del> $280</h3>
+                                <h6 class="card-sub-title">Save 20% per month! Billed yearly</h6>
+                                <button class="btn btn-outline-dark">Start with Premium</button>
+                                <p class="card-text">Build a unique site with advanced design tools, custom CSS, and Google Analytics support.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 p-5 col-sm-6">
+                        <div class="card">
+                            <div class="card-body bg-info text-dark">
+                                <h3 class="card-title">Bussiness</h3>
+                                <h6 class="card-sub-title">Best for Small Businesses</h6>
+                                <h3><del>$800</del> $640</h3>
+                                <h6 class="card-sub-title">Save 20% per month! Billed yearly</h6>
+                                <button class="btn btn-outline-dark">Start with Bussiness</button>
+                                <p class="card-text">Power your business with custom plugins & themes, 200 GB storage, and 24/7 live chat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6  p-5">
+                        <div class="card">
+                            <div class="card-body bg-light text-dark">
+                                <h3 class="card-title">eCommerce</h3>
+                                <h6 class="card-sub-title">Best for Online Stores</h6>
+                                <h3><del>$1440</del> $1152</h3>
+                                <h6 class="card-sub-title">Save 20% per month! Billed yearly</h6>
+                                <button class="btn btn-outline-dark">Start with eCommerce</button>
+                                <p class="card-text">Open your online store with a powerful, flexible platform designed to grow with you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-5">
+            <h1 class="diplay-4"><i class="fab fa-wordpress"></i></h1>
+            <h1>Create a website with
+                the world’s favorite platform.</h1>
+                <p>WordPress powers more than 40% of the web, from
+                    brand new bloggers to the world’s biggest brands.</p>
+                    <button class="btn btn-outline-danger">Start Your Website</button>
+        </div>
+        <footer class="bg-danger text-white text-center p-3">
+            <h1>copyright@2021</h1>
+            <h5>Maintained and Developed by chenna</h5>
+        </footer>
+
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+</body>
+</html>
